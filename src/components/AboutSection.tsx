@@ -9,13 +9,13 @@ const AboutSection = () => {
           <div className="lg:col-span-5">
             <h2 className="section-title mb-6">Our Heritage</h2>
             <p className="mb-6 text-lg font-light">
-              Founded in 1952 by master horologist Victor Lemond, Just In Time has evolved from a small workshop in Geneva to one of the world's most respected watchmakers.
+              Founded in 1952 by master horologist Victor Lemond, Aquarius has evolved from a small workshop in Geneva to one of the world's most respected watchmakers.
             </p>
             <p className="mb-6">
               We combine time-honored techniques with innovative approaches, staying true to our founding principles of excellence, precision, and uncompromising quality.
             </p>
             <p className="mb-8">
-              Each Just In Time watch represents our commitment to creating not merely instruments of timekeeping, but heirlooms that tell stories across generations.
+              Each Aquarius watch represents our commitment to creating not merely instruments of timekeeping, but heirlooms that tell stories across generations.
             </p>
             <a href="#" className="watch-button-filled">Our Full Story</a>
           </div>

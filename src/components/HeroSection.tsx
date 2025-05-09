@@ -27,7 +27,7 @@ const HeroSection = () => {
         )}>
           <h1 className="text-white font-playfair text-4xl md:text-5xl lg:text-7xl font-bold mb-4 tracking-tight">
             Precision. Elegance. <br className="hidden sm:block" />
-            <span className="text-watch-gold">Always Just In Time.</span>
+            <span className="text-watch-gold">Always Aquarius.</span>
           </h1>
           
           <p className="text-white/80 font-montserrat text-lg md:text-xl max-w-2xl mx-auto mb-8">

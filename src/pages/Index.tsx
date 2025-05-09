@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Just In Time | Luxury Watches";
+    document.title = "Aquarius | Luxury Watches";
     
     // Smooth scroll to anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -38,7 +38,6 @@ const Index = () => {
       <CollectionsSection />
       <CraftsmanshipSection />
       <AboutSection />
-      <ContactSection />
       <Footer />
     </div>
   );

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-playfair text-white text-xl mb-4">Just In Time</h3>
+            <h3 className="font-playfair text-white text-xl mb-4">Aquarius</h3>
             <p className="mb-4 text-sm">
               Creating exceptional timepieces since 1952. Our commitment to quality and innovation continues to set the standard in luxury watchmaking.
             </p>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">© 2025 Just In Time. All rights reserved.</p>
+          <p className="text-sm">© 2025 Aquarius. All rights reserved.</p>
           
           <div className="mt-4 md:mt-0 flex space-x-8">
             <a href="#" className="hover:text-watch-gold transition">Privacy Policy</a>
