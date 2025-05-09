@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import WatchDetailModal, { WatchDetailType } from './WatchDetailModal';
@@ -21,7 +20,9 @@ const collections: WatchDetailType[] = [
     additionalImages: [
       "https://images.unsplash.com/photo-1587836374828-4dbafa2048db?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
       "https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
-      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
     ]
   },
   {
@@ -41,7 +42,9 @@ const collections: WatchDetailType[] = [
     additionalImages: [
       "https://images.unsplash.com/photo-1528968622076-28aacc8bfaac?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
       "https://images.unsplash.com/photo-1611353384046-a816a8aba534?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
     ]
   },
   {
@@ -61,7 +64,9 @@ const collections: WatchDetailType[] = [
     additionalImages: [
       "https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
       "https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
-      "https://images.unsplash.com/photo-1509048191080-d2677e3a2f37?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+      "https://images.unsplash.com/photo-1509048191080-d2677e3a2f37?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1594576722512-582d08093d71?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
     ]
   },
   {
@@ -81,7 +86,9 @@ const collections: WatchDetailType[] = [
     additionalImages: [
       "https://images.unsplash.com/photo-1549972574-8e3e1ed6a347?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
       "https://images.unsplash.com/photo-1612532275214-e4ca76d0e4d1?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
-      "https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+      "https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1523268755815-fe7c372a0138?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
     ]
   },
 ];
