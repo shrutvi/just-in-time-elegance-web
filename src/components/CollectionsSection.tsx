@@ -17,7 +17,12 @@ const collections: WatchDetailType[] = [
       "Genuine leather strap",
       "5-year warranty"
     ],
-    detailImage: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    detailImage: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+    additionalImages: [
+      "https://images.unsplash.com/photo-1587836374828-4dbafa2048db?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    ]
   },
   {
     id: 2,
@@ -32,7 +37,12 @@ const collections: WatchDetailType[] = [
       "100m water resistance",
       "Integrated steel bracelet"
     ],
-    detailImage: "https://images.unsplash.com/photo-1539874754764-5a96559165b8?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    detailImage: "https://images.unsplash.com/photo-1539874754764-5a96559165b8?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+    additionalImages: [
+      "https://images.unsplash.com/photo-1528968622076-28aacc8bfaac?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1611353384046-a816a8aba534?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    ]
   },
   {
     id: 3,
@@ -47,7 +57,12 @@ const collections: WatchDetailType[] = [
       "Genuine alligator leather strap",
       "Limited edition of 500 pieces"
     ],
-    detailImage: "https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    detailImage: "https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+    additionalImages: [
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1509048191080-d2677e3a2f37?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    ]
   },
   {
     id: 4,
@@ -62,7 +77,12 @@ const collections: WatchDetailType[] = [
       "200m water resistance",
       "Interchangeable strap system"
     ],
-    detailImage: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    detailImage: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+    additionalImages: [
+      "https://images.unsplash.com/photo-1549972574-8e3e1ed6a347?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1612532275214-e4ca76d0e4d1?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780",
+      "https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1780"
+    ]
   },
 ];
 

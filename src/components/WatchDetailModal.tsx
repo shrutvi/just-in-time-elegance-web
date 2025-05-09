@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -9,6 +9,8 @@ import {
   DialogFooter
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export type WatchDetailType = {
   id: number;
@@ -18,6 +20,7 @@ export type WatchDetailType = {
   price?: string;
   features?: string[];
   detailImage?: string;
+  additionalImages?: string[]; // Array of additional watch images
 }
 
 interface WatchDetailModalProps {
@@ -27,7 +30,23 @@ interface WatchDetailModalProps {
 }
 
 const WatchDetailModal = ({ watch, open, onClose }: WatchDetailModalProps) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
   if (!watch) return null;
+  
+  // Combine all available images into one array
+  const allImages = [
+    watch.detailImage || watch.image,
+    ...(watch.additionalImages || [])
+  ];
+  
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % allImages.length);
+  };
+  
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev === 0 ? allImages.length - 1 : prev - 1));
+  };
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
@@ -38,12 +57,48 @@ const WatchDetailModal = ({ watch, open, onClose }: WatchDetailModalProps) => {
         </DialogHeader>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-4">
-          <div className="aspect-square overflow-hidden rounded">
-            <img 
-              src={watch.detailImage || watch.image} 
-              alt={watch.name} 
-              className="w-full h-full object-cover object-center" 
-            />
+          <div className="relative">
+            <AspectRatio ratio={1/1} className="overflow-hidden rounded">
+              <img 
+                src={allImages[currentImageIndex]} 
+                alt={`${watch.name} - image ${currentImageIndex + 1}`} 
+                className="w-full h-full object-cover object-center transition-all duration-300" 
+              />
+            </AspectRatio>
+            
+            {allImages.length > 1 && (
+              <>
+                <button 
+                  onClick={prevImage}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1 rounded-full transition-colors"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button 
+                  onClick={nextImage}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1 rounded-full transition-colors"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </>
+            )}
+            
+            {allImages.length > 1 && (
+              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1">
+                {allImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      currentImageIndex === index ? "bg-watch-gold" : "bg-white/50"
+                    }`}
+                    aria-label={`View image ${index + 1}`}
+                  />
+                ))}
+              </div>
+            )}
           </div>
           
           <div className="flex flex-col justify-between">
